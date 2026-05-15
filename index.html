@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мистический Петербург</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Логотип" class="logo-img" />
+                Мистический Петербург
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Карта</a></li>
+                <li><a href="list.html">Список</a></li>
+                <li><a href="timeline.html">Хронология</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div id="map"></div>
+        <aside id="info-panel" class="info-panel hidden">
+            <button id="close-panel" class="close-btn" title="Закрыть">✕</button>
+            <img id="info-image" src="" alt="" />
+            <h2 id="info-title"></h2>
+            <section class="info-section">
+                <h3>Легенда</h3>
+                <p id="info-legend"></p>
+            </section>
+            <a id="info-link" href="#" class="read-more-btn">Читать полностью →</a>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-col">
+                <h4>Команда проекта</h4>
+                <ul>
+                    <li>Бутынцев Д. — исследователь</li>
+                    <li>Зайцев Н. — разработчик, дизайнер</li>
+                    <li>Тамарова В. — исследователь</li>
+                    <li>Арзуманян В. — дизайнер</li>
+                    <li>Захарян С. — продюсер</li>
+                </ul>
+            </div>
+            <div class="footer-col footer-uni">
+                <h4>Университет</h4>
+                <p>Университет ИТМО<br>2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

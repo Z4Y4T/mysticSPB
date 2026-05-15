@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список мифов — Мистический Петербург</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <style>
+        .list-page {
+            background-color: #0a0808;
+            color: #b8a88a;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .list-content {
+            flex: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+
+        .list-content h1 {
+            font-family: 'Jost', sans-serif;
+            font-size: 32px;
+            color: #b8943a;
+            margin-bottom: 50px;
+            letter-spacing: 3px;
+            font-weight: 300;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .myths-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .myths-list li {
+            border-bottom: 1px solid #1a1515;
+        }
+
+        .myths-list a {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 18px 10px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .myths-list a:hover {
+            background-color: rgba(184, 148, 58, 0.05);
+        }
+
+        .myth-number {
+            font-family: 'Jost', sans-serif;
+            font-size: 11px;
+            color: #5a4a3a;
+            letter-spacing: 2px;
+            min-width: 30px;
+            flex-shrink: 0;
+        }
+
+        .myth-list-title {
+            font-family: 'Jost', sans-serif;
+            font-size: 14px;
+            color: #b8943a;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 300;
+            transition: color 0.3s;
+        }
+
+        .myths-list a:hover .myth-list-title {
+            color: #d4a843;
+        }
+
+        .myth-list-arrow {
+            font-family: 'Jost', sans-serif;
+            font-size: 12px;
+            color: #3a2a1a;
+            margin-left: auto;
+            transition: all 0.3s;
+        }
+
+        .myths-list a:hover .myth-list-arrow {
+            color: #b8943a;
+            transform: translateX(5px);
+        }
+
+        .list-page::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('img/list-backgr.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.1;
+            z-index: 0;
+            pointer-events: none;
+}
+
+        @media (max-width: 600px) {
+            .list-content {
+                padding: 40px 16px;
+            }
+            .list-content h1 {
+                font-size: 24px;
+                letter-spacing: 2px;
+            }
+            .myth-list-title {
+                font-size: 12px;
+                letter-spacing: 1px;
+            }
+        }
+    </style>
+</head>
+<body class="list-page">
+    <header class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Логотип" class="logo-img" />
+                Мистический Петербург
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Карта</a></li>
+                <li><a href="list.html" class="active">Список</a></li>
+                <li><a href="timeline.html">Хронология</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="list-content">
+        <h1>Мифы</h1>
+
+        <ul class="myths-list">
+            <li>
+                <a href="myths/myth1.html">
+                    <span class="myth-number">01</span>
+                    <span class="myth-list-title">Зеркало Дракулы в особняке Брусницыных</span>
+                    <span class="myth-list-arrow">→</span>
+                </a>
+            </li>
+            <li>
+                <a href="myths/myth2.html">
+                    <span class="myth-number">02</span>
+                    <span class="myth-list-title">Сфинксы на Университетской набережной</span>
+                    <span class="myth-list-arrow">→</span>
+                </a>
+            </li>
+            <li>
+                <a href="myths/myth3.html">
+                    <span class="myth-number">03</span>
+                    <span class="myth-list-title">Ротонда в Доме на Гороховой</span>
+                    <span class="myth-list-arrow">→</span>
+                </a>
+            </li>
+            <li>
+                <a href="myths/myth4.html">
+                    <span class="myth-number">04</span>
+                    <span class="myth-list-title">Памятник Петру I «Медный всадник»</span>
+                    <span class="myth-list-arrow">→</span>
+                </a>
+            </li>
+            <li>
+                <a href="myths/myth5.html">
+                    <span class="myth-number">05</span>
+                    <span class="myth-list-title">Обводный канал</span>
+                    <span class="myth-list-arrow">→</span>
+                </a>
+            </li>
+            <li>
+                <a href="myths/myth6.html">
+                    <span class="myth-number">06</span>
+                    <span class="myth-list-title">Семимостье</span>
+                    <span class="myth-list-arrow">→</span>
+                </a>
+            </li>
+            <li>
+                <a href="myths/myth7.html">
+                    <span class="myth-number">07</span>
+                    <span class="myth-list-title">Михайловский замок</span>
+                    <span class="myth-list-arrow">→</span>
+                </a>
+            </li>
+            <li>
+                <a href="myths/myth8.html">
+                    <span class="myth-number">08</span>
+                    <span class="myth-list-title">Малоохтинское кладбище</span>
+                    <span class="myth-list-arrow">→</span>
+                </a>
+            </li>
+            <li>
+                <a href="myths/myth9.html">
+                    <span class="myth-number">09</span>
+                    <span class="myth-list-title">Марсово поле</span>
+                    <span class="myth-list-arrow">→</span>
+                </a>
+            </li>
+            <li>
+                <a href="myths/myth10.html">
+                    <span class="myth-number">10</span>
+                    <span class="myth-list-title">Аптека Пеля и башня Грифонов</span>
+                    <span class="myth-list-arrow">→</span>
+                </a>
+            </li>
+            <li>
+                <a href="myths/myth11.html">
+                    <span class="myth-number">11</span>
+                    <span class="myth-list-title">Никольское кладбище</span>
+                    <span class="myth-list-arrow">→</span>
+                </a>
+            </li>
+            <li>
+                <a href="myths/myth12.html">
+                    <span class="myth-number">12</span>
+                    <span class="myth-list-title">Чёртова пустошь в Екатерингофе</span>
+                    <span class="myth-list-arrow">→</span>
+                </a>
+            </li>
+            <li>
+                <a href="myths/myth13.html">
+                    <span class="myth-number">13</span>
+                    <span class="myth-list-title">Мостик Лизы</span>
+                    <span class="myth-list-arrow">→</span>
+                </a>
+            </li>
+            <li>
+                <a href="myths/myth14.html">
+                    <span class="myth-number">14</span>
+                    <span class="myth-list-title">Волшебный двор духов</span>
+                    <span class="myth-list-arrow">→</span>
+                </a>
+            </li>
+            <li>
+                <a href="myths/myth15.html">
+                    <span class="myth-number">15</span>
+                    <span class="myth-list-title">Дом Пиковой дамы</span>
+                    <span class="myth-list-arrow">→</span>
+                </a>
+            </li>
+            <li>
+                <a href="myths/myth16.html">
+                    <span class="myth-number">16</span>
+                    <span class="myth-list-title">Юсуповский дворец</span>
+                    <span class="myth-list-arrow">→</span>
+                </a>
+            </li>
+            <li>
+                <a href="myths/myth17.html">
+                    <span class="myth-number">17</span>
+                    <span class="myth-list-title">Квартира Распутина на Гороховой</span>
+                    <span class="myth-list-arrow">→</span>
+                </a>
+            </li>
+            <li>
+                <a href="myths/myth18.html">
+                    <span class="myth-number">18</span>
+                    <span class="myth-list-title">Литейный мост и камень Атакан</span>
+                    <span class="myth-list-arrow">→</span>
+                </a>
+            </li>
+        </ul>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-col">
+                <h4>Команда проекта</h4>
+                <ul>
+                    <li>Бутынцев Д. — исследователь</li>
+                    <li>Зайцев Н. — разработчик, дизайнер</li>
+                    <li>Тамарова В. — исследователь</li>
+                    <li>Арзуманян В. — дизайнер</li>
+                    <li>Захарян С. — продюсер</li>
+                </ul>
+            </div>
+            <div class="footer-col footer-uni">
+                <h4>Университет</h4>
+                <p>Университет ИТМО<br>2026</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

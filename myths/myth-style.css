@@ -1,0 +1,107 @@
+.myth-page {
+    background-color: #0a0808;
+    color: #b8a88a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.myth-page::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.myth-content {
+    flex: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.myth-content h1 {
+    font-family: 'Jost', sans-serif;
+    font-size: 32px;
+    color: #b8943a;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.myth-image {
+    display: block;
+    max-width: 70%;
+    margin: 0 auto 40px;
+    border: 1px solid #2a1515;
+    filter: sepia(0.4) brightness(0.8);
+}
+
+.myth-content h2 {
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    color: #5a4a3a;
+    margin: 40px 0 15px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.myth-content h2:first-of-type {
+    margin-top: 0;
+}
+
+.myth-content p {
+    font-family: 'EB Garamond', 'Times New Roman', serif;
+    line-height: 2;
+    color: #8a7a6a;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.back-link {
+    font-family: 'Jost', sans-serif;
+    color: #5a4a3a;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: all 0.4s;
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.back-link:hover {
+    color: #b8943a;
+    letter-spacing: 5px;
+}
+
+@media (max-width: 600px) {
+    .myth-content {
+        padding: 40px 16px;
+    }
+    .myth-content h1 {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+    .myth-content p {
+        font-size: 16px;
+    }
+    .myth-image {
+        max-width: 100%;
+    }
+}
